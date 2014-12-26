@@ -15,7 +15,7 @@ and start http-server from the project root
 * The discribe description is not added to file names so it descriptions must be unique.
 * since the approve files is downloaded by the browser you need to save them to the right folder (approvals) and remove eventual numbers added to the file name by the browser
 
-###Usage
+###Test pattern
 
 the patten for tests is like this
 ```javascript
@@ -29,7 +29,7 @@ the patten for tests is like this
   });
  ```
 ###Approve
-*output from failed tests are shown in line with a simple diff view
-*below the outputs from a failed test there is an "Approve" button that will download the output from the test as a file with name "test_description.approved.txt"
-*approved outputs needs to be saved to approvals folder (beware that browsers tend to add numbers to files if downloaded multiple times)
+* Output from failed tests are shown in line with a simple diff view
+* Below the outputs from a failed test there is an "Approve" button that will download the output from the test as a file with name "test_description.approved.txt"
+* Approved outputs needs to be saved to approvals folder (beware that browsers tend to add numbers to files if downloaded multiple times)
 
