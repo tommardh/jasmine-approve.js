@@ -28,4 +28,7 @@ the patten for tests is like this
     return object; //returned value is sent for approval
   });
  ```
-approved outputs needs to be saved to approvals folder
+*output from failed tests are shown in line with a simple diff view
+*below the outputs from a failed test there is an "Approve" button that will download the output from the test as a file with name "test_description.approved.txt"
+*approved outputs needs to be saved to approvals folder (beware that browsers tend to add numbers to files if downloaded multiple times)
+
