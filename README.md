@@ -11,15 +11,15 @@ https://github.com/nodeapps/http-server for this purpose
 and start http-server from the project root
 
 
-Limitations
+###Limitations
 * Can´t handle assync test methods but assync calls can be done in beforeEach
 * The discribe description is not added to file names so it descriptions must be uneque.
 * since the approve files is downloaded by the browser you need to save them to the right folder (approvals) and remove eventual numbers added to the file name by the browser
 
-Usage
+###Usage
 
 the patten for tests is like this
-
+```javascript
  //approval test
   approveIt("should approve object", function() {
     var object = {};
@@ -28,5 +28,5 @@ the patten for tests is like this
     object.href = "http://url.com/test.txt";
     return object; //returned value is sent for approval
   });
-  
+ ```
 approved outputs needs to be saved to approvals folder
