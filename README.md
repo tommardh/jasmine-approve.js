@@ -1,8 +1,8 @@
-jasmine-approve.js 0.0.1
+jasmine-approve.js 
 ==================
 
 
-This is a rough approval testing implementation for jasmine in the browser. I like the approval testing approach a lot
+This is a rough approval testing implementation for jasmine ment to run in the browser. I like the approval testing approach a lot
 and when I started writing JavaScript i constantly wanted to assert json structures in my tests but i found no easy way to do approval testing style tests in the browser. So this is my first go at solving this. 
 
 this solution needs a http server to serve files to the browser I use 
