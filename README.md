@@ -2,12 +2,11 @@ jasmine-approve.js
 ==================
 
 
-This is a rough approval testing implementation for jasmine ment to run in the browser. I like the approval testing approach a lot
-and when I started writing JavaScript i constantly wanted to assert json structures in my tests but i found no easy way to do approval testing style tests in the browser. So this is my first go at solving this. 
+This is a rough approval testing implementation for jasmine ment to run in the browser. I like the approval testing approach a lot and when I started writing JavaScript i constantly wanted to assert json structures in my tests but i found no easy way to do approval testing style tests in the browser. So this is my first go at solving this. 
 
-this solution needs a http server to serve files to the browser I use 
-https://github.com/nodeapps/http-server for this purpose 
-and start http-server from the project root
+I recommend to copy all these files to a test folder in your project.
+
+This solution needs a http server to serve files to the browser I use https://github.com/nodeapps/http-server for this purpose and start http-server from the folder containing these files.
 
 
 ###Limitations
@@ -17,6 +16,7 @@ and start http-server from the project root
 ###Test pattern
 
 the patten for tests is like this
+
 ```javascript
  //approval test
 approveIt("should approve object", function(approvals) {
@@ -27,7 +27,9 @@ approveIt("should approve object", function(approvals) {
     approvals.verify(object);
   });
  ```
+
 ###Approve
+
 * Output from failed tests are shown in line with a simple diff view
 * Below the outputs from a failed test there is an "Approve recieved output" button that will download the output from the test as a file with name "test_description.approved.txt"
 * Approved outputs needs to be saved to approvals folder (beware that browsers tend to add numbers to files if downloaded multiple times)
