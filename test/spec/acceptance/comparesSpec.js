@@ -1,4 +1,4 @@
-describe("Converters", function() {
+describe("Compares", function() {
   
   beforeEach(function() {
     
@@ -28,20 +28,6 @@ describe("Converters", function() {
     approvals.verify(object);
   });
 
-  it("failing regular test", function() {
-    var object = {};
-    object.id = 100;
-    object.name = "testObject";
-    object.href = "http://url.com/test.txt";
-    expect(object).toBe({"id":101,"name":"testObject","href":"http://url.com/test.txt"});
-  });
-
-  //regular test
-  it("should convert number to int string", function() {
-    var number = 10.3;
-    var integerString = "" + Math.floor(number);
-    expect(integerString).toEqual("10");
-  });
 });
 
  
